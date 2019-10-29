@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#000000"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:rowCount="7"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_height="140sp"
+        android:layout_row="1"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill" />
+
+    <TextView
+        android:id="@+id/num_edit"
+        android:layout_row="2"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill"
+        android:layout_margin="5dp"
+        android:gravity="right"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/AC"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_gray_normal"
+        android:text="AC"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/plus_minus"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_gray_normal"
+        android:text="±"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_gray_normal"
+        android:text="%"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_yellow_normal"
+        android:text="÷"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_black_normal"
+        android:text="7"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_black_normal"
+        android:text="8"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_black_normal"
+        android:text="9"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_yellow_normal"
+        android:text="×"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:text="4"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_black_normal"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/five"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:text="5"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_black_normal"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/six"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:text="6"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_black_normal"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_yellow_normal"
+        android:text="－"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:text="1"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_black_normal"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/two"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:text="2"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_black_normal"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/three"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:text="3"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_black_normal"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_yellow_normal"
+        android:text="+"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_columnSpan="2"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+
+        android:layout_gravity="fill"
+        android:text="0"
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_zero_normal"
+        android:textColor="#FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/point"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:text="."
+        android:textStyle="bold"
+        android:background="@drawable/btn_circle_black_normal"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/btn_circle_yellow_normal"
+        android:text="="
+        android:textStyle="bold" />
+
+
+</GridLayout>
