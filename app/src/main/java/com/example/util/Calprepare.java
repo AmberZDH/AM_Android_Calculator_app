@@ -3,6 +3,13 @@ package com.example.util;
 import com.example.bean.CalFormula;
 
 public class Calprepare {
+
+    /**
+     * 用于计算不同的公式类型
+     *
+     * @param num_string
+     * @return
+     */
     public String cal_sin(String num_string) {
 
         TypeExchange typeExchange = new TypeExchange();
@@ -32,11 +39,11 @@ public class Calprepare {
 
         //计算后缀表达式
         double sum_out = cal.calPostfix(expList);
-        sum_out=Math.sin(sum_out);
+        sum_out = Math.sin(sum_out);
 
-        String out=typeExchange.doubleToString(sum_out);
+        String out = typeExchange.doubleToString(sum_out);
 
-        return num_string.replace("s"+cal_num, typeExchange.doubleToString(sum_out));
+        return num_string.replace("s" + cal_num, typeExchange.doubleToString(sum_out));
     }
 
     public String cal_cos(String num_string) {
@@ -67,11 +74,11 @@ public class Calprepare {
 
         //计算后缀表达式
         double sum_out = cal.calPostfix(expList);
-        sum_out=Math.sin(sum_out);
+        sum_out = Math.sin(sum_out);
 
-        String out=typeExchange.doubleToString(sum_out);
+        String out = typeExchange.doubleToString(sum_out);
 
-        return num_string.replace("c"+cal_num, typeExchange.doubleToString(sum_out));
+        return num_string.replace("c" + cal_num, typeExchange.doubleToString(sum_out));
     }
 
     public String cal_tan(String num_string) {
@@ -134,11 +141,11 @@ public class Calprepare {
 
         //计算后缀表达式
         double sum_out = cal.calPostfix(expList);
-        sum_out=Math.tan(sum_out);
+        sum_out = Math.tan(sum_out);
 
-        String out=typeExchange.doubleToString(sum_out);
+        String out = typeExchange.doubleToString(sum_out);
 
-        return num_string.replace("t"+cal_num, typeExchange.doubleToString(sum_out));
+        return num_string.replace("t" + cal_num, typeExchange.doubleToString(sum_out));
     }
 
     public String cal_log(String num_string) {
@@ -169,10 +176,10 @@ public class Calprepare {
 
         //计算后缀表达式
         double sum_out = cal.calPostfix(expList);
-        sum_out=Math.sin(sum_out);
+        sum_out = Math.sin(sum_out);
 
-        String out=typeExchange.doubleToString(sum_out);
+        String out = typeExchange.doubleToString(sum_out);
 
-        return num_string.replace("l"+cal_num, typeExchange.doubleToString(sum_out));
+        return num_string.replace("l" + cal_num, typeExchange.doubleToString(sum_out));
     }
 }

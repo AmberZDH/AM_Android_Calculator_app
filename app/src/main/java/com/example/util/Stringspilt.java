@@ -3,6 +3,10 @@ package com.example.util;
 import java.util.ArrayList;
 
 public class Stringspilt {
+    /**
+     * 用于表达式拆封 存入栈
+     */
+
     private String formula;
     private String[] dir = {"+", "-", "*", "/", "(", ")", "^", "%"};
 

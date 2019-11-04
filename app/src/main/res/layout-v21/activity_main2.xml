@@ -91,7 +91,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/mc"
+            android:id="@+id/binary"
             android:layout_row="0"
             android:layout_column="3"
             android:layout_columnWeight="1"
@@ -100,12 +100,12 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/btn_circle_gray_selector_land"
-            android:text="mc"
+            android:text="二"
             android:textAllCaps="false"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/mplus"
+            android:id="@+id/octal"
             android:layout_row="0"
             android:layout_column="4"
             android:layout_columnWeight="1"
@@ -114,12 +114,12 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/btn_circle_gray_selector_land"
-            android:text="m+"
+            android:text="八"
             android:textAllCaps="false"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/msub"
+            android:id="@+id/dollar"
             android:layout_row="0"
             android:layout_column="5"
             android:layout_columnWeight="1"
@@ -128,12 +128,12 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/btn_circle_gray_selector_land"
-            android:text="m-"
+            android:text="$"
             android:textAllCaps="false"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/mr"
+            android:id="@+id/euro"
             android:layout_row="0"
             android:layout_column="6"
             android:layout_columnWeight="1"
@@ -142,7 +142,7 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/btn_circle_gray_selector_land"
-            android:text="mr"
+            android:text="€"
             android:textAllCaps="false"
             android:textStyle="bold" />
 

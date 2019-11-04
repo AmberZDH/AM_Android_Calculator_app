@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.bean.CalFormula;
-import com.example.util.CalString;
 import com.example.util.Calprepare;
 import com.example.util.Stringspilt;
 import com.example.util.TypeExchange;
@@ -24,7 +23,7 @@ public class Main2Activity extends Activity implements View.OnClickListener {
 
     Button[] buttons = new Button[41];
     int[] ids = new int[]{
-            R.id.left_parenthesis, R.id.right_parenthesis, R.id.one_divide_by_x, R.id.mc, R.id.mplus, R.id.msub, R.id.mr,
+            R.id.left_parenthesis, R.id.right_parenthesis, R.id.one_divide_by_x, R.id.binary, R.id.octal, R.id.dollar, R.id.euro,
             R.id.square, R.id.cube, R.id.power_function, R.id.c, R.id.division, R.id.multi, R.id.del,
             R.id.factorial, R.id.square_root, R.id.radica_sign, R.id.seven, R.id.eight, R.id.nine, R.id.sub,
             R.id.e, R.id.e_x, R.id.ln, R.id.four, R.id.five, R.id.six, R.id.plus,
@@ -37,7 +36,6 @@ public class Main2Activity extends Activity implements View.OnClickListener {
     String input_strings;
     String output_strings;
     Calprepare calprepare = new Calprepare();
-    CalString calString = new CalString();
     TypeExchange typeExchange = new TypeExchange();
 
 
@@ -148,6 +146,31 @@ public class Main2Activity extends Activity implements View.OnClickListener {
 
 
                 //************************************* 功能区域 ***************************************
+
+                case R.id.binary:
+                    String str1 = textView_input.getText().toString();
+                    int num1 = typeExchange.stringToint(str1);
+                    textView_output.setText(Integer.toBinaryString(num1));
+                    break;
+
+                case R.id.octal:
+                    String str2 = textView_input.getText().toString();
+                    int num2 = typeExchange.stringToint(str2);
+                    textView_output.setText(Integer.toOctalString(num2));
+                    break;
+
+                case R.id.euro:
+                    String str3 = textView_input.getText().toString();
+                    double num3 = typeExchange.stringTodouble(str3) * 7.8476;
+                    textView_output.setText(typeExchange.doubleToString(num3));
+                    break;
+
+                case R.id.dollar:
+                    String str4 = textView_input.getText().toString();
+                    double num4 = typeExchange.stringTodouble(str4) * 7.0256;
+                    textView_output.setText(typeExchange.doubleToString(num4));
+                    break;
+
                 case R.id.c:
                     textView_input.setText("0");
                     textView_output.setText("");
