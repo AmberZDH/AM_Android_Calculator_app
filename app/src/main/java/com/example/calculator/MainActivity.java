@@ -2,19 +2,23 @@ package com.example.calculator;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.calculator.R.id;
 import com.example.util.TypeExchange;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private TextView textView;
-    private Button[] buttons = new Button[19];
+    private Button[] buttons = new Button[20];
+    private AlertDialog.Builder builder;
 
     TypeExchange typeExchange = new TypeExchange();
     String mathtype = null;
@@ -23,10 +27,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
     int[] ids = new int[]{
-            R.id.AC, R.id.plus_minus, R.id.percent, R.id.division,
+            R.id.AC, R.id.plus_minus, R.id.percent,R.id.division,
             R.id.multi, R.id.sub, R.id.plus, R.id.point, R.id.equal,
             R.id.one, R.id.two, R.id.three, R.id.four, R.id.five,
-            R.id.six, R.id.seven, R.id.eight, R.id.nine, R.id.zero
+            R.id.six, R.id.seven, R.id.eight, R.id.nine, R.id.zero, id.help
     };
 
 
@@ -75,7 +79,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             num2 = 0;
         }
         switch (view.getId()) {
-            //************************************* Numbers区域 ***************************************
+
+            case R.id.help:
+                showTwo();
+                break;
+
+                //************************************* Numbers区域 ***************************************
             case R.id.one:
                 if (textView.getText().toString().equals("0"))
                     textView.setText("1");
@@ -288,5 +297,26 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
         }
 
+    }
+
+    private void showTwo() {
+
+        builder = new AlertDialog.Builder(this).setIcon(R.mipmap.ic_launcher).setTitle("帮助")
+                .setMessage("计算器的使用\n" +
+                        "横屏简单计算器，竖屏复杂计算器").setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //ToDo: 你想做的事情
+                        Toast.makeText(MainActivity.this, "确定", Toast.LENGTH_LONG).show();
+                    }
+                }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //ToDo: 你想做的事情
+                        Toast.makeText(MainActivity.this, "关闭", Toast.LENGTH_LONG).show();
+                        dialogInterface.dismiss();
+                    }
+                });
+        builder.create().show();
     }
 }

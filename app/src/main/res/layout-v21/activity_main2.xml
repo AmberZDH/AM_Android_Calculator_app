@@ -114,7 +114,7 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/btn_circle_gray_selector_land"
-            android:text="八"
+            android:text="km-m"
             android:textAllCaps="false"
             android:textStyle="bold" />
 
@@ -142,7 +142,7 @@
             android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/btn_circle_gray_selector_land"
-            android:text="€"
+            android:text="cm2"
             android:textAllCaps="false"
             android:textStyle="bold" />
 

@@ -153,15 +153,15 @@ public class Main2Activity extends Activity implements View.OnClickListener {
                     textView_output.setText(Integer.toBinaryString(num1));
                     break;
 
-                case R.id.octal:
+                case R.id.octal://长度km - m
                     String str2 = textView_input.getText().toString();
-                    int num2 = typeExchange.stringToint(str2);
-                    textView_output.setText(Integer.toOctalString(num2));
+                    double num2=typeExchange.stringTodouble(str2)*1000;
+                    textView_output.setText(typeExchange.doubleToString(num2));
                     break;
 
-                case R.id.euro:
+                case R.id.euro://m2-cm2
                     String str3 = textView_input.getText().toString();
-                    double num3 = typeExchange.stringTodouble(str3) * 7.8476;
+                    double num3 = typeExchange.stringTodouble(str3) * 10000;
                     textView_output.setText(typeExchange.doubleToString(num3));
                     break;
 
@@ -202,9 +202,9 @@ public class Main2Activity extends Activity implements View.OnClickListener {
 
                 case R.id.sub:
                     if (textView_input.getText().toString().equals("0"))
-                        textView_input.setText("－");
+                        textView_input.setText("-");
                     else
-                        textView_input.setText(textView_input.getText().toString() + "－");
+                        textView_input.setText(textView_input.getText().toString() + "-");
                     break;
 
                 case R.id.division:
