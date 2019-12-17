@@ -164,20 +164,6 @@ public class CalFormula {
                         result = Math.pow(num2, num1);
                         break;
 
-//                    case "s":
-//                        sumStack.push(num2);
-//                        result = Math.sin(num1);
-//                        break;
-//
-//                    case "c":
-//                        sumStack.push(num2);
-//                        result = Math.cos(num1);
-//                        break;
-//
-//                    case "t":
-//                        sumStack.push(num2);
-//                        result = Math.tan(num1);
-//                        break;
                     default:
                         System.out.println("something wrong in your postfix!");
                 }

@@ -159,9 +159,9 @@ public class Main2Activity extends Activity implements View.OnClickListener {
                     textView_output.setText(typeExchange.doubleToString(num2));
                     break;
 
-                case R.id.euro://m2-cm2
+                case R.id.euro://m3
                     String str3 = textView_input.getText().toString();
-                    double num3 = typeExchange.stringTodouble(str3) * 10000;
+                    double num3 = typeExchange.stringTodouble(str3) * typeExchange.stringTodouble(str3)*typeExchange.stringTodouble(str3);
                     textView_output.setText(typeExchange.doubleToString(num3));
                     break;
 
